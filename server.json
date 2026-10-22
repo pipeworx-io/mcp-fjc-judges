@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/fjc-judges",
   "title": "Fjc Judges",
   "description": "FJC Judges — the Federal Judicial Center's Biographical Directory of Article III federal judges…",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/fjc-judges",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-fjc-judges",

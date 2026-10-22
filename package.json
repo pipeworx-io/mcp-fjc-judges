@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-fjc-judges",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "FJC Judges — the Federal Judicial Center's Biographical Directory of Article III federal judges, 1789 to present.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-3d488828c2f6ff57cb2886bb34f6a1c8bfa19a0bcf74c1ff98deeda6a5edb5db",
-    "sourceCommit": "4f465027cf3de54acf4976d8118ae3423a8ec9fa"
+    "sourceHash": "v1-c230eb2fce2f94b178c021e4674f830e6128602ceb97110357ba5fa962cfa77c",
+    "sourceCommit": "712a5e0171ea24483214329d0cd7efdfd9b80352"
   }
 }

@@ -4,7 +4,7 @@ Biographies and appointment records of every US federal (Article III) judge sinc
 1789 — Supreme Court justices, court of appeals and district court judges — from
 the Federal Judicial Center's Biographical Directory.
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1800+ live data sources. This is an independent, unofficial integration — not affiliated with, endorsed by, or published by the upstream provider.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1866+ live data sources. This is an independent, unofficial integration — not affiliated with, endorsed by, or published by the upstream provider.
 
 ## Tools
 
@@ -20,6 +20,10 @@ Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents 
   appointment a president made, with totals by court level. Joseph R. Biden:
   235 appointments of 230 distinct judges (one judge can be appointed twice,
   e.g. Ketanji Brown Jackson to the D.C. Circuit and then the Supreme Court).
+- `fjc_seat_succession(name | seat_id, court?)` — the chain of holders of one
+  judgeship in order, with the named predecessor and successor of the judge asked
+  about ("who did Judge X replace"). Built from the directory's Seat ID, whose
+  last two digits are the holder's sequence on that seat.
 
 Every response carries `source`, `licence` and `data_as_of` (when the FJC last
 regenerated the directory).
@@ -98,7 +102,7 @@ directly, instead of just this one's:
 }
 ```
 
-Both URLs reach the same gateway and the same 1800+ data sources. The
+Both URLs reach the same gateway and the same 1866+ data sources. The
 only difference is which pack's tools are listed **directly**; `ask_pipeworx`
 reaches all of them from either one.
 

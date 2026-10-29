@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-fjc-judges",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "FJC Judges — the Federal Judicial Center's Biographical Directory of Article III federal judges, 1789 to present.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-fjc-judges": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "fjc-judges"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-fjc-judges.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/fjc-judges",
   "pipeworx": {
-    "sourceHash": "v1-83be9816fe231a01d109c059b6847117419b04e0321b55d539de9669005764a0",
-    "sourceCommit": "722087a9bda73f85942e8f6bbfd598544cb0d490"
+    "mode": "gateway",
+    "slug": "fjc-judges",
+    "gatewaySlug": "fjc-judges",
+    "sourceHash": "v1-d77bce58e4df21b6aaf5a18bfbbf07fd6ac9541abf63a5223ee9aece2eb41413",
+    "sourceCommit": "bb047243cf27f32453103de186b8e6a8b6a1ce79"
   }
 }
